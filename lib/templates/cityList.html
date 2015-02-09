@@ -1,0 +1,8 @@
+<div id="elements1" ng-controller="cityController" class="container">
+    <input type="text" data-ng-model="cityname"/>
+    <ul>
+        <li ng-repeat="cities in list.cities | filter:cityname">
+            <a ng-href="#/cityList/{{cities.rank}}">{{cities.label}}</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,60 @@
+<div id="cities1" ng-controller="cityItemController" class="container">
+    <a href="#/">Home</a>
+    <div class="row">
+        <div class="col-md-offset-2">
+            <h1>{{cities.label}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <strong>City Name: </strong>
+        </div>
+        <div class="col-md-4">
+            <a ng-href="http://en.wikipedia.org/wiki/{{cities.label}}" Title="Wikipedia article on {{cities.label}}"
+               target="_blank">{{cities.label}}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <strong>Rank: </strong>
+        </div>
+        <div class="col-md-4">
+            {{cities.rank}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <strong>Latitude/Longitude: </strong>
+        </div>
+        <div class="col-md-4">
+            {{cities.latlng}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <strong>State: </strong>
+        </div>
+        <div class="col-md-4">
+            {{cities.state}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <strong>Population: </strong>
+        </div>
+        <div class="col-md-4">
+            {{cities.pop}}
+        </div>
+    </div>
+
+    <div class = "row" id="mapImage">
+        <div class="col-md-4 col-md-offset-2">
+<img src="{{cities.mapImageUrl}}">
+        </div>
+    </div>
+
+
+</div>
